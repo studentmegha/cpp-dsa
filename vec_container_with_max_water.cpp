@@ -1,3 +1,5 @@
+// brute force approach
+
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -18,9 +20,26 @@ int maxArea (vector<int>& height){
     }
     return maxWater;
 }
+
+// optimised
+
+int maxArr(vector<int>& height){
+int n = height.size();
+int maxWater  = 0;
+int lp =0 ,rp = height.size()-1;
+int (lp<rp);
+int w =rp -lp;
+int h = min(height[lp], height[rp]);
+int currWater = w*h;
+maxWater= max(maxWater , currWater);
+height[lp]<height[rp]? lp++ : rp--;
+}
+
+
 int main(){
-    vector<int> height= {1,2,6,4,8,9};
+    vector<int> height= {1,2,6,4,9,7,8};
     cout <<maxArea(height);
     return 0;
 
 }
+
