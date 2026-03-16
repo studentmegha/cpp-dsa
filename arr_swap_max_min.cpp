@@ -20,8 +20,7 @@ using namespace std;
   }
     // swap
 
-    swap (nums[smallest] , nums[largest]);
-
+    swap (nums[minIndex] , nums[maxIndex]);
     cout << "Array after swapping min and max: " << endl;
     for (int i =0; i<size; i++){
         cout << nums[i] << " ";

@@ -10,9 +10,19 @@ void selectionsort(int arr[] , int n){
         }
         swap(arr[i] , arr[minIndex]);
     }
+}
 void printArray(int arr[] , int n){
     for (int i = 0; i<n; i++){
         cout << arr[i] << " ";
     }
     cout << endl;
+}
+int main(){
+    int arr[] = {64,25,12,22,11};
+    int n = 5;
+    selectionsort(arr , n);
+    cout << "Sorted array: ";
+    for (int i = 0; i<n; i++){
+        cout << arr[i] << " ";
+    }
 }

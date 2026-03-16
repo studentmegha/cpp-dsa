@@ -13,7 +13,7 @@ int main(){
             
         }
         } 
-        cout<<"max sum aubaaray sum="<< maxsum << endl;
+        cout<<"max sum subaaray sum="<< maxsum << endl;
     
 
     return 0;
